@@ -1,0 +1,32 @@
+/*Resets*/
+
+:root{
+  --primary: #f85555;
+  --light-gray: #dcd9d9;
+  --gray: #c7c7c7;
+  --dark-gray: #4f4f4f;
+  --text-gray: #ababab;
+}
+body{
+  margin: 0;
+}
+html{
+  box-sizing: border-box;
+}
+*, *::after, *::before{
+  box-sizing: inherit;
+}
+img{
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p{
+  margin: 0;
+}

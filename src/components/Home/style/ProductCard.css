@@ -1,0 +1,43 @@
+.productCard{
+    border: 1px solid var(--gray);
+    border-radius:10px ;
+}
+.productCard__header{
+    border-bottom: 1px solid var(--gray);
+    display: grid;
+    place-content: center;
+}
+.productCard__info{
+    padding: 22px;
+    position: relative;
+}
+.productCard__brand, .productCard__priceTitle{
+    color: var(--gray);
+}
+.productCard__brand{
+    font-size: 18px;
+}
+.productCard__title, .productCard__price{
+    margin-left:15px;
+    margin-top: 3px;
+}
+.productCard__priceTtitle{
+    margin-top: 20px;
+    font-weight: normal;
+}
+.productCard__btn{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    color: white;
+    background-color: var(--primary);
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    width: 60px;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+
