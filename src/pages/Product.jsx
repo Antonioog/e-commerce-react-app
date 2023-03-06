@@ -81,11 +81,11 @@ const Product = () => {
               <h4 className="product__detail-quantityTitle">Quantity</h4>
               <div className="product__detail-counter">
                 <button onClick={handleLess}>
-                  <i className="bx bxs-minus-circle"></i>
+                  <p>-</p>
                 </button>
                 <h4>{quantity}</h4>
                 <button onClick={handlePlus}>
-                  <i className="bx bxs-plus-circle"></i>
+                 <p>+</p>
                 </button>
               </div>
             </div>

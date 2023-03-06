@@ -1,6 +1,7 @@
 .productCard{
     border: 1px solid var(--gray);
     border-radius:10px ;
+    cursor: pointer;
 }
 .productCard__header{
     border-bottom: 1px solid var(--gray);

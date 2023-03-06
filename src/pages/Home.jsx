@@ -44,14 +44,14 @@ const Home = () => {
 
   return (
     <main className="home">
-      <form onSubmit={handleSubmit}>
-        <div>
-          <input id="nameProduct" type="text" />
-          <button><i className="bx bx-search"></i></button>
+      <form  className="home__form" onSubmit={handleSubmit}>
+        <div className="form__search">
+          <input id="nameProduct" type="text" placeholder="Search" />
+          <button className="form__btn-search"><i className="bx bx-search"></i></button>
         </div>
-        <div>
+        <div className="home__categories">
           <h3>Categories</h3>
-          <ul>
+          <ul className="form__ul">
             <li onClick={() => setCategoryFilter(0)}>All</li>
             {
               categories.map(category => <li onClick={() => setCategoryFilter(category.id)} key={category.name}>{category.name}</li>)

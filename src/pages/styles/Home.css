@@ -4,7 +4,42 @@
     justify-content: center;
     grid-template-rows:auto ;
     gap: 40px;
-    padding: 20px;
+    padding: 10px;
     max-width: 1200px;
     margin: 0 auto;
+
 }
+.home__form{
+    line-height: 25px;  
+    padding: 20px;
+
+}
+.form__ul li{
+    cursor: pointer;
+}
+.form__ul li:hover{
+    color: var(--primary);
+    font-weight: bold;
+}
+#nameProduct{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--primary);
+}
+.form__search{
+    display: flex;
+    gap: 10px;
+}
+.form__btn-search{
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+
+}
+
+
+
