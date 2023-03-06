@@ -10,7 +10,6 @@
 }
 .purcharse__card-container{
     display: flex;
-    border: 1px solid red;
     margin-bottom: 25px;
     
 }
@@ -21,7 +20,6 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    border: 1px solid orange;
     
 
 }
@@ -53,7 +51,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid violet;
+
 
 }
 
