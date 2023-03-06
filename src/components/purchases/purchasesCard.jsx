@@ -13,9 +13,9 @@ const purchasesCard = ({ purchase }) => {
             <h4 className="purchases__card-title">{purchase.product.title}</h4>
           </div>
           <div className="purcharse__card-info">
-            <h4>{formatDateDDMMYYYY(purchase.createdAt)}</h4>
+            <h4 className="purcharse__card-date">{formatDateDDMMYYYY(purchase.createdAt)}</h4>
             <div>
-              <h4>{purchase.quantity}</h4>
+              <h4 className="purcharse__card-quantity">{purchase.quantity}</h4>
             </div>
             <div>
               <h4>$ {purchase.product.price}</h4>
