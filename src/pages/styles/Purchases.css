@@ -10,6 +10,7 @@
 .purcharse__card-container{
     display: flex;
     justify-content: space-around;
+    padding: 20px;
     margin-bottom: 25px;
     
 }
@@ -17,7 +18,6 @@
 .purcharse__card-header{
     width: 100%;
     height: 100px;
-    padding: 20px;
     overflow: hidden;
     display: flex;
     align-items: center;
