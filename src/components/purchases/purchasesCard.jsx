@@ -3,16 +3,16 @@ import { formatDateDDMMYYYY } from "../../utils/date";
 
 const purchasesCard = ({ purchase }) => {
   return (
-    <section>
+    <section className="purchase__card">
       {
-        <article>
-          <div>
-            <div>
+        <article className="purcharse__card-container">
+          <div className="purcharse__card-header">
+            <div className="purchases__Card-img">
               <img src={purchase.product.images[0].url} alt="" />
             </div>
-            <h4>{purchase.product.title}</h4>
+            <h4 className="purchases__card-title">{purchase.product.title}</h4>
           </div>
-          <div>
+          <div className="purcharse__card-info">
             <h4>{formatDateDDMMYYYY(purchase.createdAt)}</h4>
             <div>
               <h4>{purchase.quantity}</h4>

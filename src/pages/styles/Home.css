@@ -40,6 +40,12 @@
     padding: 8px;
 
 }
+.form__btn-search:hover{
+    background-color: brown;
+    font-weight: bold;
+   
+
+}
 
 
 
