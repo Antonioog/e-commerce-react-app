@@ -1,6 +1,7 @@
 
 .purchases__section-container{
  font-size: 14px;
+ padding: 20px;
 }
 .purchases__title{
   font-size: 25px;
@@ -9,18 +10,18 @@
 }
 .purcharse__card-container{
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    border: 1px solid red;
     margin-bottom: 25px;
     
 }
 
 .purcharse__card-header{
-    width: 100%;
+    width: 80%;
     height: 100px;
     overflow: hidden;
     display: flex;
     align-items: center;
+    border: 1px solid orange;
     
 
 }
@@ -52,6 +53,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid violet;
 
 }
 
