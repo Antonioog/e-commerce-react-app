@@ -9,9 +9,16 @@
     height: 250px;
     overflow: hidden;
 }
+.productCard__header:hover .productCard__img img:last-of-type{
+    opacity: 1;
+}
+.productCard__header:hover .productCard__img img:first-of-type{
+    opacity: 0;
+}
 .productCard__img{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .productCard__img img{
     display: block;
@@ -19,6 +26,15 @@
     height: 100%;
     object-fit: contain;
     margin: 0 auto;
+    transition: opacity 400ms ease;
+}
+.productCard__img img:last-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 }
 
 .productCard__info{

@@ -6,10 +6,13 @@ import { addProductCart } from "../store/slices/cart.slice";
 import { useDispatch } from "react-redux";
 import "./styles/Product.css"
 
+const arrayClassesSlider = ["first", "second", "third"]
+
 const Product = () => {
   const [product, setProduct] = useState();
   const [quantity, setQuantity] = useState(1);
   const [similarProducts, setSimilarProducts] = useState([]);
+  const [indexSlider, setIndexSlider] = useState(0)
 
   const { id } = useParams();
 
@@ -33,6 +36,31 @@ const Product = () => {
     };
     dispatch(addProductCart(data));
   };
+
+  const handleClickNext = () =>{
+    const newIndexSlider = indexSlider + 1
+    const lastPosition = arrayClassesSlider.length -1
+    if(newIndexSlider > lastPosition){
+      setIndexSlider(0)
+    }else{
+      setIndexSlider(newIndexSlider)
+
+    }
+
+  }
+  const handleClickPreviws = () => {
+    const newIndexSlider = indexSlider - 1
+    const lastPosition = arrayClassesSlider.length - 1
+    if(newIndexSlider < 0){
+      setIndexSlider(lastPosition)
+    }else{
+      setIndexSlider(newIndexSlider)
+
+    }
+
+    
+
+  }
 
   useEffect(() => {
     axiosEcommerce
@@ -62,11 +90,21 @@ const Product = () => {
   return (
     <main className="product">
       <section className="product__detail">
-        <section className="product__detail-imgContainer">
+       <section className="product__slider">
+       <section className={`product__detail-imgContainer ${arrayClassesSlider[indexSlider]}`}>
           <div className="product__detail-img">
             <img src={product?.images[0].url} alt="" />
           </div>
+          <div className="product__detail-img">
+            <img src={product?.images[1].url} alt="" />
+          </div>
+          <div className="product__detail-img">
+            <img src={product?.images[2].url} alt="" />
+          </div>
         </section>
+          <div onClick={handleClickPreviws} className="product__btnLeft"><i className='bx bx-chevron-left'></i></div>
+          <div onClick={handleClickNext} className="product__btnRight"><i className='bx bx-chevron-right'></i></div>
+       </section>
 
         <section className="product__detail-infoContainer">
           <h4 className="product__detail-brand">{product?.brand}</h4>

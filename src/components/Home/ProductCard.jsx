@@ -28,6 +28,7 @@ const ProductCard = ({ product }) => {
       <header className="productCard__header">
         <div className="productCard__img">
           <img src={product.images[0].url} alt="" />
+          <img src={product.images[1].url} alt="" />
         </div>
       </header>
       <section className="productCard__info">

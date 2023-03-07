@@ -20,7 +20,7 @@ const Navbar = () => {
         </Link>
         <Link className="navbar__link" to="/cart">
           <i className="bx bx-cart"></i>
-          {token ? <span>{products.length} </span> : ""}
+          {token ? <span>{products?.length} </span> : ""}
         </Link>
       </div>
     </nav>

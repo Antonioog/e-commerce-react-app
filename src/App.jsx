@@ -10,6 +10,7 @@ import Navbar from "./components/Home/Layout/Navbar";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getAllCartProducts } from "./store/slices/cart.slice";
+import Notification from "./App/Notification";
 
 function App() {
   const { token } = useSelector((store) => store.userInfo);
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Notification />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
