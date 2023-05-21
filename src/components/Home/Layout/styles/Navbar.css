@@ -1,9 +1,10 @@
 .navbar{
     display: flex;
+    width: 100%;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
     padding: 10px 10px;
-    position: sticky;
     top: 0;
     background-color: white;
     z-index: 2;
@@ -16,29 +17,37 @@
     font-family: 'Yantramanav', sans-serif;
     font-size: 20px;
 }
+.navbar__name:hover{
+    color: brown;
+}
 .navbar__link{
-    color: var(--text-gray);
-    font-size: 25px;
     padding: 5px;
     position: relative;
+    font-size: 25px;
+    color: var(--text-gray);
+
+}
+.navbar__link:hover{
+    color: brown;
+    
 }
 .navbar__containerLinks{
     display: flex;
     gap: 10px;
 }
 .navbar__link span{
+    display: grid;
+    position: absolute;
+    height: 25px;
+    aspect-ratio: 1;
     background-color: var(--primary);
     color: white;
-    aspect-ratio: 1;
-    height: 25px;
     font-weight: bold;
-    position: absolute;
+    font-size: 15px;
     right: -3px;
     bottom: -5px;
-    display: grid;
     place-content: center;
     border-radius: 50%;
-    font-size: 15px;
 
 }
 

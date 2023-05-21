@@ -1,6 +1,7 @@
 .login{
-    background-color: var(--ultra-light-gray);
-    min-height: calc(100vh - 42px);
+    background-color: #f7f7f7;
+    margin-top: 40px;
+    min-height: calc(100vh - 64px);
     display: grid;
     place-content: center;
 }
@@ -10,6 +11,7 @@
     border-radius: 10px;
     text-align: center;
     width: min(90vh, 400px );
+   
 }
 .login-logged__icon{
     font-size: 80px;

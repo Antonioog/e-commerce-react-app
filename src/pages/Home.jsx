@@ -50,7 +50,7 @@ const Home = () => {
           <button className="form__btn-search"><i className="bx bx-search"></i></button>
         </div>
         <div className="home__categories">
-          <h3>Categories</h3>
+          <h3 className="categories__name">Categories</h3>
           <ul className="form__ul">
             <li onClick={() => setCategoryFilter(0)}>All</li>
             {

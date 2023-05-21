@@ -1,18 +1,17 @@
-.notification{
-    background-color: var(--primary);
-    color: white;
-    padding: 5px 10px;
-    width: max-content;
-    border-radius: 5px ;
-    position: fixed;
-    opacity: 0;
-    right: -100%;
-    transition: right 300ms ease, opacity 500ms ease;
-    z-index: 2;
-
+.notification {
+  background-color: var(--primary);
+  color: white;
+  padding: 5px 10px;
+  width: max-content;
+  border-radius: 5px;
+  position: fixed;
+  opacity: 0;
+  right: -100%;
+  transition: right 300ms ease, opacity 500ms ease;
+  z-index: 2;
 }
 
-.notification.active{
-    right: 10px;
-    opacity: 1;
+.notification.active {
+  right: 10px;
+  opacity: 1;
 }

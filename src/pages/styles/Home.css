@@ -7,19 +7,36 @@
     padding: 10px;
     max-width: 1200px;
     margin: 0 auto;
+    padding-left: 300px;
+    margin-top: 120px;
+    
 
 }
 .home__form{
     line-height: 25px;  
     padding: 20px;
+    position: fixed;
+    line-height: 40px;
+    text-align: center;
+    width: 200px;
+    height: 100%;
+    
 
+}
+.categories__name{
+    padding-top: 10px;
+    text-align: center;
 }
 .form__ul li{
     cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
 }
 .form__ul li:hover{
-    color: var(--primary);
+    color: brown;
     font-weight: bold;
+   
 }
 #nameProduct{
     border: none;

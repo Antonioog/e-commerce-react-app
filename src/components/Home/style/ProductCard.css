@@ -59,7 +59,7 @@
     position: absolute;
     top: 90px;
     bottom: 25px;
-    right: 25px;
+    right: 15px;
     color: white;
     background-color: var(--primary);
     padding: 8px;
@@ -69,6 +69,9 @@
     width: 35px;
     aspect-ratio: 1;
     cursor: pointer;
+}
+.productCard__btn:hover{
+    background-color: brown;
 }
 
 

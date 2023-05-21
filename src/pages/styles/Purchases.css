@@ -2,16 +2,17 @@
 .purchases__section-container{
  font-size: 14px;
  padding: 20px;
+ margin-top: 40px;
 }
 .purchases__title{
   font-size: 25px;
-  padding: 25px;
+  padding: 40px;
   color: var(--dark-gray);
 }
 .purcharse__card-container{
     display: flex;
     margin-bottom: 25px;
-    
+    max-width: 1200px;
 }
 
 .purcharse__card-header{

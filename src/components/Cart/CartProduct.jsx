@@ -1,9 +1,12 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import "./styles/CartProduct.css"
 import {
   deleteProductCart,
   updateProductCart,
 } from "../../store/slices/cart.slice";
+
+
 
 const CartProduct = ({ product }) => {
   const dispatch = useDispatch();
@@ -32,22 +35,30 @@ const CartProduct = ({ product }) => {
     }
   };
   return (
-    <article>
-      <div>
+    <article className="product__cart-main">
+      <section className="product__cart-section">
+        <div className="img__container">
+      <div className="product__cart-img">
         <img src={product.product.images[0].url} alt="" />
+        </div>
       </div>
-      <section>
-        <h3>{product.product.title}</h3>
-        <div>
-          <button onClick={handleClickLess}>-</button>
-          <h3>{product.quantity}</h3>
-          <button onClick={handleClickPlus}>+</button>
+      <section className="info-general">
+      <section className="info__product">
+        <h3 className="title__product">{product.product.title}</h3>
+        <div className="button__product">
+          <button className="buttons__product" onClick={handleClickLess}>-</button>
+          <h3 className="title__total">{product.quantity}</h3>
+          <button className="buttons__product" onClick={handleClickPlus}>+</button>
         </div>
       </section>
-      <section>
-        <i onClick={handleDeleteCartProduct} className="bx bx-trash"></i>
-        <h3>Total</h3>
-        <h3>${product.quantity * product.product.price}</h3>
+      <section className="info__total-product">
+        <i onClick={handleDeleteCartProduct} className="bx bx-trash trash"></i>
+        <section className="total">
+        <h3 >Total</h3>
+        <h3 >${product.quantity * product.product.price}</h3>
+        </section>
+      </section>
+      </section>
       </section>
     </article>
   );
